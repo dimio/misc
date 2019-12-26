@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# v. 0.0.2
+# v. 0.0.3
 # dimio (dimio.org)
 set -e
 set -u
