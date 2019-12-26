@@ -4,15 +4,14 @@
 set -e
 set -u
 
-BIN="$(dirname $0)/bin"
-FACT="${BIN}/factorization.bash"
+BIN="$(dirname $0)"/bin
+FACT="${BIN}"/factorization.bash
 
 _cyclical_call(){
 	for ((i=1; i <= ${1}; i++))
 	do
 		printf "\n\nПример # ${i} из ${1}\n"
-		# bash -i ${EXEC} ${2} ${3}
-		eval ${2} ${3} ${4}
+		eval "${2}" "${3}" "${4}"
 	done
 }
 
